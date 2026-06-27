@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Task Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Task Planner</h1>
+
+        <input type="text"
+               id="task"
+               placeholder="Enter task">
+
+        <input type="date"
+               id="date">
+
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <button onclick="addTask()">
+            Add Task
+        </button>
+
+        <!-- THIS IS VERY IMPORTANT -->
+         <input type="text" id="search" placeholder="Search task" onkeyup="searchTask()">
+
+<h3>Total Tasks: <span id="count">0</span></h3>
+<h3>
+    Total: <span id="count">0</span> |
+    Completed: <span id="completed">0</span> |
+    Pending: <span id="pending">0</span>
+</h3>
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
